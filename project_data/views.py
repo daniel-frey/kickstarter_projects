@@ -20,7 +20,6 @@ def kickstarter_list_view(request):
     page = request.GET.get('page')
     kickstarters = paginator.get_page(page)
 
-    # import pdb; pdb.set_trace()
 
     context = {
         'kickstarters': kickstarters
