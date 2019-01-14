@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project_data.wsgi.application'
+WSGI_APPLICATION = 'kickstarter_project.wsgi.application'
 
 
 # Database
@@ -130,7 +130,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, '')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Media files
 MEDIA_URL = '/media/'
