@@ -22,7 +22,7 @@
 </div>
 
 {% for kickstarter in kickstarters %}
-<a href="{% url "kickstarter_detail" pk=kickstarter.id %}">
+<a href="{% url 'kickstarter_detail' pk=kickstarter.id %}">
   <h3>Name: {{ kickstarter.name }}, Category: {{ kickstarter.category }}</h3>
 </a>
 {% endfor %}
