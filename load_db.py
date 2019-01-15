@@ -8,9 +8,9 @@ df = pd.DataFrame(csv_data)
 
 # Adjust NaN values in each column, and generally clean data set
 
-df['id'] = df['Unnamed: 0'] + 1
-del df['Unnamed: 0']
-
+# df['id'] = df['Unnamed: 0'] + 1
+# del df['Unnamed: 0']
+df['id'] = range(len(df))
 df['id_data'] = df['ID'].fillna(0.0)
 del df['ID']
 df['name'] = df['name'].fillna('unknown')
@@ -24,7 +24,7 @@ df['pledged'] = df['pledged'].fillna('unknown')
 df['state'] = df['state'].fillna('unknown')
 df['backers'] = df['backers'].fillna('unknown')
 df['country'] = df['country'].fillna('unknown')
-df['usd pledged'] = df['usd pledged'].fillna('unknown')
+df['usd_pledged'] = df['usd pledged'].fillna('unknown')
 df['usd_pledged_real'] = df['usd_pledged_real'].fillna('unknown')
 df['usd_goal_real'] = df['usd_goal_real'].fillna('unknown')
 
