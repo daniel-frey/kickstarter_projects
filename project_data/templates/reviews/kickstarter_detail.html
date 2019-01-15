@@ -1,0 +1,14 @@
+{% extends 'generic/base.html' %}
+
+{% block content %}
+<h2>Welcome to "{{ kickstarter.name }}" detail page</h2>
+
+<h4>Category: {{ kickstarter.category }}</h4>
+<h4>Launched: {{ kickstarter.launched }}</h4>
+<h4>Deadline: {{ kickstarter.deadline }}</h4>
+<h4>Amount Pledged: {{ kickstarter.usd_pledged_real }} {{ kickstarter.currency }} of {{ kickstarter.goal }} goal.</h4>
+<h4>Backers: {{ kickstarter.backers }}</h4>
+<h4>Country: {{ kickstarter.country }}</h4>
+<h4>State: {{ kickstarter.state | upper }}</h4>
+
+{% endblock content %}
