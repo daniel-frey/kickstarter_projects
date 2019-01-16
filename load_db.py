@@ -29,6 +29,8 @@ del df['usd pledged']
 df['usd_pledged_real'] = df['usd_pledged_real'].fillna(0.0)
 df['usd_goal_real'] = df['usd_goal_real'].fillna(0.0)
 
+df = df[:10000]
+
 db_protocol = 'postgresql'
 # db_host = 'kickstarter_projects_db_1'
 
