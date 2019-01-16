@@ -115,8 +115,7 @@ venv.bak/
 .mypy_cache/
 
 # CSV Files
-*.csv
-.csv
+
 
 # AWM PEM File
 *.pem
