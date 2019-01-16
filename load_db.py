@@ -24,9 +24,10 @@ df['pledged'] = df['pledged'].fillna('unknown')
 df['state'] = df['state'].fillna('unknown')
 df['backers'] = df['backers'].fillna('unknown')
 df['country'] = df['country'].fillna('unknown')
-df['usd_pledged'] = df['usd pledged'].fillna('unknown')
-df['usd_pledged_real'] = df['usd_pledged_real'].fillna('unknown')
-df['usd_goal_real'] = df['usd_goal_real'].fillna('unknown')
+df['usd_pledged'] = df['usd pledged'].fillna(0.0)
+del df['usd pledged']
+df['usd_pledged_real'] = df['usd_pledged_real'].fillna(0.0)
+df['usd_goal_real'] = df['usd_goal_real'].fillna(0.0)
 
 db_protocol = 'postgresql'
 # db_host = 'kickstarter_projects_db_1'
